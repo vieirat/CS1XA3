@@ -1,0 +1,15 @@
+combining::[BookInfo]->[[Int]]
+
+combining books=superBubble [(map index books)]
+ bSearch [xs] key s
+           if length[xs] <> s then return 9999
+           else
+           if
+             key=m then elemIndex m [xs]
+           else
+             if key<m then bsearch (splitAt (x:xs) o) key o
+            else bsearch (splitAt ms (o+2) ) key n
+           o<-s/2-1
+           n<-length ms
+ finalBsearch::(Ord)=> [a]->a->a->Int
+ finalBsearch ms key s= bsearch  (combining [ms]) key s 
